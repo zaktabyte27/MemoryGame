@@ -58,7 +58,7 @@ function App() {
 
   const [guess,addGuess] = useState([])
   const [countries,setCountries] = useState(createList) 
-
+  const [highScore,newHS] = useState(0)
 
 
   const checkClicked = (e)=>{
@@ -70,6 +70,9 @@ function App() {
     } else {
       setCountries(createList)
       addGuess([])
+      if (guess.length>highScore){
+        newHS(guess.length)
+      }
     }
   }
 
@@ -88,6 +91,7 @@ function App() {
       <div className="container">{cards}</div>
       <div className="end">
         <h3>Score: {guess.length}/12</h3>
+        <h3>High score: {highScore}/12</h3>
       </div>
     </div>
   )
