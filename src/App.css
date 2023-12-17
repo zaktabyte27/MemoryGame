@@ -1,0 +1,61 @@
+
+
+
+.body{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.card{
+  width: 1fr;
+  height: 1fr;
+  background-color: grey;
+  border: solid black;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white
+}
+
+.end{
+  color: black;
+  background-color: white;
+  border: solid black;
+  border-radius: 5px;
+  z-index: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container{
+  display: grid;
+  margin: 45px;
+  margin-bottom: 0;
+  grid-template-columns: repeat(4,minmax(300px,1fr));
+  grid-auto-rows: 220px;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  pointer-events: none;
+}
